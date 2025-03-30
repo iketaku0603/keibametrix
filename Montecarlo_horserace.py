@@ -10,7 +10,7 @@ horses = {
 
 n_trials = 100000
 results = []
-
+#モンテカルロ法でレースをシミュレーション
 for _ in range(n_trials):
     # 各馬のタイムをランダムに生成
     sampled = {k: np.random.normal(mu, sigma) for k, (mu, sigma) in horses.items()}
